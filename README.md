@@ -100,6 +100,6 @@ Pretty cool that the fundamentals scale from a $50 Arduino project to million-do
 
 ---
 
-**Built with lots of coffee and debugging sessions ☕**
+**Built with lots of coffee and debugging sessions**
 
 *Started as a weekend project, ended up teaching me more about autonomous systems than any textbook ever could!*
