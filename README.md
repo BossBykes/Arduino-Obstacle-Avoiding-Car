@@ -1,17 +1,17 @@
-# 🚗 Arduino Obstacle Avoiding Car
+# Arduino Obstacle Avoiding Car
 
 ## What's This About?
 
 Ever wondered how self-driving cars "see" obstacles and avoid them? Well, I built a mini version using Arduino! This little robot car navigates around obstacles all by itself - no remote control needed. It's basically a tiny autonomous vehicle that taught me a ton about how real autonomous systems work.
 
-## 🎯 What It Does
+## What It Does
 
 - **Sees obstacles** using an ultrasonic sensor (like a bat's echolocation!)
 - **Makes decisions** on which way to turn when something's in the way
 - **Drives itself** around rooms, avoiding furniture, walls, and your cat
 - **Never gets tired** - keeps exploring until the battery dies
 
-## 🛠️ What I Built It With
+## What I Built It With
 
 | Part | What I Used | Why |
 |------|-------------|-----|
@@ -21,9 +21,9 @@ Ever wondered how self-driving cars "see" obstacles and avoid them? Well, I buil
 | **Body** | 4-wheel robot chassis | Something to put everything on |
 | **Food** | 9V Battery Pack | Keeps everything running |
 
-## 🤔 How Does It Actually Work?
+## How Does It Actually Work?
 
-The logic is surprisingly simple (but took me forever to get right 😅):
+The logic is surprisingly simple (but took me forever to get right):
 
 ```cpp
 // The basic idea
@@ -45,7 +45,7 @@ if (something_too_close) {
 5. **Makes the turn** - Spins the wheels accordingly
 6. **Repeats forever** - Back to step 1
 
-## 🔌 How to Wire It Up
+## How to Wire It Up
 
 **Sensor connections:**
 - VCC → 5V (power)
@@ -57,15 +57,15 @@ if (something_too_close) {
 - IN1-IN4 → Pins 2,3,4,5 (direction control)
 - ENA, ENB → Pins 6,11 (speed control)
 
-*Pro tip: Double-check your wiring before powering on - I learned this the hard way! 🔥*
+*Pro tip: Double-check your wiring before powering on - I learned this the hard way!*
 
 **What I measured:**
 - Detects objects from 2cm to 4 meters away
 - Reacts in under 0.1 seconds
 - Runs for about 2-3 hours on one battery
-- Successfully avoids 95% of obstacles (the other 5% is usually user error 😄)
+- Successfully avoids 95% of obstacles (the other 5% is usually user error)
 
-## 😅 Problems I Had to Solve
+## Problems I Had to Solve
 
 **Noisy sensor readings:** The ultrasonic sensor would randomly give crazy readings. Fixed it by averaging multiple readings - much more stable now.
 
@@ -75,23 +75,16 @@ if (something_too_close) {
 
 **Battery dying fast:** Original code was super inefficient. Added some delays and optimizations to double the battery life.
 
-## 🧠 What I Learned
+## What I Learned
 
 This project was like a crash course in:
 - **Arduino programming** - C++ for embedded systems
 - **Sensor integration** - Reading and filtering real-world data
 - **Motor control** - PWM signals and H-bridges
 - **Algorithm design** - Making robots make smart decisions
-- **Debugging patience** - Because nothing works the first time! 😂
+- **Debugging patience** - Because nothing works the first time!
 
-## 🚀 What's Next?
-
-I'm thinking about adding:
-- [ ] A camera so it can "see" what it's avoiding
-- [ ] Bluetooth control for when I want to drive it manually
-- [ ] Maybe some AI to learn better routes over time
-
-## 💭 Why This Matters
+## Why This Matters
 
 This little car might seem simple, but it's using the same basic principles as:
 - **Tesla's Autopilot** (obstacle detection and avoidance)
@@ -101,7 +94,7 @@ This little car might seem simple, but it's using the same basic principles as:
 
 Pretty cool that the fundamentals scale from a $50 Arduino project to million-dollar systems!
 
-## 🏷️ Tags
+## Tags
 
 `Arduino` `Autonomous-Vehicle` `Obstacle-Avoidance` `Robotics` `CPlusPlus` `Embedded-Systems` `DIY-Robot`
 
